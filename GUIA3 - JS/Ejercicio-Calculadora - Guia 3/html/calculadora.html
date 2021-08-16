@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloCalculadora.css">
+    <link rel="shortcut icon" href="../img/calculadoraIcon.png" />
+    <title>Calculadora Web</title>
+</head>
+<body>
+<header>
+    <h2>Calculadora Web!</h2>
+</header>
+    <div id="container-all">
+        <form action="javascript:void(0);" id="calculadora" name="calculadora">
+            <div id="screen">
+                <input type="text" name="pantallaResultado" id="pantallaResultado" readonly value="">
+            </div>
+            
+            <div id="controls-numbers">
+                <input type="button" name="button" id="button7" value="7">
+                <input type="button" name="button" id="button8" value="8">
+                <input type="button" name="button" id="button9" value="9">
+                <br>
+                <input type="button" name="button" id="button4" value="4">
+                <input type="button" name="button" id="button5" value="5">
+                <input type="button" name="button" id="button6" value="6">
+                <br>
+                <input type="button" name="button" id="button1" value="1">
+                <input type="button" name="button" id="button2" value="2">
+                <input type="button" name="button" id="button3" value="3">
+                <br>
+                <input type="button" name="button0" id="button0" value="0">
+            </div>
+            <aside>
+                <div id="controls-actions">
+                    <div class="control-reset">
+                        <input type="reset" name="btnReset" id="btnReset" value="C" >
+                    </div>
+                    <br>
+                    <div class="control-plus">
+                        <input type="button" name="btnPlus" id="btnPlus" value="+">
+                    </div>
+                    <br>
+                    <div class="control-less">
+                        <input type="button" name="btnLess" id="btnLess" value="-">
+                    </div>
+                    <br>
+                    <div class="control-divide">
+                        <input type="button" name="btnDivide" id="btnDivide" value="/">
+                    </div>
+                    <br>
+                    <div class="control-mult">
+                        <input type="button" name="btnMult" id="btnMult" value="x">
+                    </div>
+                    <br>
+                    <div class="control-equal">
+                        <input type="button" name="btnEqual" id="btnEqual" value="=">                    
+                    </div>
+                </div>
+                <div id="controls-actions2">
+                    <input type="button" name="btnResidue" id="btnResidue" class="btnSecundarios" value="%"> 
+                    <input type="button" name="btnInverse" id="btnInverse" class="btnSecundarios" value="INVRS"> 
+                    <input type="button" name="btnSqrt" id="btnSqrt" class="btnSecundarios" value="√">
+                    <input type="button" name="btnPow" id="btnPow" class="btnSecundarios" value="x^2">
+                </div>
+                <!--<input type="button" name="btnSqrt" id="btnSqrt" value="√">-->
+            </aside>
+            
+           
+        </form>
+    </div>
+
+    <!--<div id="animated-image">
+        <img src="../img/animation.svg" alt="Animation">
+    </div>-->
+   
+    <!--<button id="btnMostrar"  href="javascript:mostrar();"">Mostrar historial</button>-->
+    <div id="text-historial">
+        <h4>Historial Operaciones: </h4>
+    </div>
+    <div id="historial-container">
+        <h3>No hay nada por el momento!</h3>
+        <!--<h4>Historial: </h4><br>-->
+    </div>
+    
+      <div id="credits">
+        <p>Una calculadora hecha por Mauricio Pérez, 
+            correspondiente a Guía 3 DAW - Ejercicio Complementario
+        </p>
+    </div>
+    
+    <script src="../js/calculadora-procesos.js"></script>
+</body>
+</html>
