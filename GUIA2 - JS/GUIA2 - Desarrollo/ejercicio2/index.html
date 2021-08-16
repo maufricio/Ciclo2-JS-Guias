@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Guía 2</title>
+</head>
+<body>
+    
+    <form action="javascript:void(0);" action = "POST" name="formulario" id="formulario-datos">
+        <h1>Ingrese los datos de sus ventas</h1>
+        <input type="text" name="nombreVendedor" id="nombreVendedor" placeholder="Nombre del Vendedor" autofocus></br>
+        <input type="text" name="txtProducto" id="txtProducto" placeholder = "Nombre del Producto"></br>
+        <input type="text" name="txtPrecio" id="txtPrecio" placeholder="Precio del producto"></br>
+        <input type="submit" name="btnEnviar" id="btnEnviar" value="Registrar nuevo producto" >
+        <input type="submit" name="btnBorrar" id="btnBorrar" value="Limpiar texto" onclick="cleanElements();">
+    </form>
+
+    <div id="view">
+
+    </div>
+    <script src="js/ventas.js"></script>
+</body>
+</html>
